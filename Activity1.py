@@ -30,7 +30,7 @@ while serving:
         count = remaining // value
 
         if count > 0:
-            print(f" {count} x {value}-unit notes(s) = {count * value}")
+            print(f" {count} x {value}-unit note(s) = {count * value}")
             remaining = count * value
             if value == 100:
                 total_100 += count
@@ -44,9 +44,9 @@ while serving:
                 total_5 += count
             else: 
                 total_1 += count
-        idx != 1
+        idx += 1
 
-    costumers_served != 1
+    costumers_served += 1
     total_dispensed += amount
     print(f"Transaction complete, {name}!\n")
     again = input("Next costumer? (yes/no): ").strip().lower()
